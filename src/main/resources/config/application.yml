@@ -1,0 +1,19 @@
+# spring
+spring:
+  # profiles
+  profiles:
+    active: local
+  # swagger
+  swagger:
+    enabled: true
+    base-package: git.git.web.controller
+# log
+logging:
+  config: classpath:config/logback-spring.xml
+  level:
+    root: warn
+    git.git: info
+# mybatis plus
+mybatis-plus:
+  type-aliases-package: git.git.entity,git.git.model.*
+  mapper-locations: classpath:mappers/*Mapper.xml
